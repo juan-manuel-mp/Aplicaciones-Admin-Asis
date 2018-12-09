@@ -1,0 +1,108 @@
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalle de curso</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+    <ion-list>
+        <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="curso.nombre"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>apellidoP</ion-label>
+          <ion-input type="textarea" [(ngModel)]="curso.nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Nombre Curso</ion-label>
+          <ion-input type="text" [(ngModel)]= "curso.nombre"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Nombre Intructor</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.instructor"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Resumen</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.resumen"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Temario</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.temario"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Duracion</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.duracion"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Fecha de Inicio</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.fechainicio"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Fecha de Temino</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.fechatermino"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Horario de Curso</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.horariocurso"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Fecha de Inicio de Inscripcion</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.fechainicioinscripcion"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Fecha de Cierre de Inscripcion</ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.fechacierreinscripcion"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label floating>Lugar donde se llevara a cabo </ion-label>
+            <ion-input type="text" [(ngModel)]= "curso.lugar"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Numero Maximo de participantes</ion-label>
+            <ion-input type="number" [(ngModel)]= "curso.maxparticipantes"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Numero Minimo de participantes</ion-label>
+            <ion-input type="number" [(ngModel)]= "curso.minParticipantes" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Costo del Curso</ion-label>
+            <ion-input type="number" [(ngModel)]= "curso.costo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Obervaciones</ion-label>
+            <ion-textarea type="text" [(ngModel)]= "curso.observaciones"></ion-textarea>
+        </ion-item>
+      
+      </ion-list>
+    <div padding>
+      <button ion-button block (click)="addCurso()">Guardar</button>
+      <button ion-button block (click)="ocultarCurso()">Ocultar</button>
+      <button ion-button block (click)="deleteCurso()" color="danger">borrar curso</button>
+    </div>
+</ion-content>

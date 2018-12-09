@@ -1,0 +1,19 @@
+<script src = "build / vendor.js"> </script>
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cursos List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let curso of cursos" (click)="verDetalle(curso.nombre)">
+      {{ curso.nombre }}
+    </button>  
+  </ion-list>
+  <div padding>
+    <button ion-button block (click)="createCurso()">Crear Curso</button>
+  </div>
+</ion-content>
