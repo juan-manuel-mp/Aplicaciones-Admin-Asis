@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login Asistente
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input  reset type="text" [(ngModel)]= "user.email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input clear type="password" [(ngModel)]= "user.pass"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button full (click) = "login(user)">LogIn</button>
+  <button ion-button full (click)="registro()">Registrarse</button>
+</ion-content>

@@ -1,0 +1,65 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro Asistente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Nombre Curso</ion-label>
+          <ion-input type="text" ></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Nombre(s)</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Apellido Paterno</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Apellido Materno</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text" [(ngModel)]= "user.email"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Centro de Origen</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Número de Cuenta</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Teléfono de Contacto</ion-label>
+            <ion-input type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Contraseña</ion-label>
+            <ion-input type="text" [(ngModel)]= "user.pass"></ion-input>
+        </ion-item>
+
+        <button ion-button full (click) = "register(user)">Crear Cuenta</button>
+
+      </ion-list>
+</ion-content>

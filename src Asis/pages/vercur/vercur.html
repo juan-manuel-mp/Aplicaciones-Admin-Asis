@@ -1,0 +1,22 @@
+<!--
+  Generated template for the VercurPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<script src = "build / vendor.js"> </script>
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cursos List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let curso of cursos" (click)="datcur(curso.nombre)">
+      {{ curso.nombre }}
+    </button>  
+  </ion-list>
+</ion-content>
